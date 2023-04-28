@@ -13,7 +13,7 @@ iptables -P OUTPUT  DROP
 iptables -P FORWARD  DROP
 
 ###Habilita o NAT
-iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE 
+iptables -t nat -A POSTROUTING -o enp0s3 -j MASQUERADE 
 
 ##### Regras acesso a VM Security #####
 
